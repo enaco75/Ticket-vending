@@ -1,0 +1,239 @@
+@import "variable";
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-size: $big_fontSize;
+}
+img{
+    width: 100%;
+}
+select{
+    width: $select_width;
+    font-size: $big_fontSize;
+}
+.err{
+    background-color: $key_bg_color;
+}
+
+//ヘッダー
+header{
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+    box-shadow: $shadow-2dp;
+}
+#reset_btn{
+    text-decoration: none;
+    border: 1px solid $key_color;
+    border-radius: $border_radius;
+    padding: 10px;
+    color: $key_color;
+    font-size: $big_fontSize;
+    font-weight: 700;
+}
+#reset_btn:hover{
+    background-color: $key_bg_color;
+    transition: 0.5s;
+}
+
+p{
+    text-align: center;
+    span{
+        color: $key_color;
+        strong{
+            font-size: $sub_fontSize;
+        }
+    }
+}
+#index_p{
+    margin: 30px 0 20px;
+}
+.cash_p:first-of-type{
+    margin-top: 30px;
+}
+.cash_p:last-of-type{
+    margin-bottom: 20px;
+}
+
+form{
+    padding: 0 100px;
+    //index.php(トップ画面)
+    #index_amount{
+        text-align: center;
+        font-size: $big_fontSize;
+        margin-bottom: 50px;
+    }
+    #btn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .index_btn{
+            width: 40%;
+            height: 40%;
+            font-size: $big_fontSize;
+            border-radius: $border_radius;
+            img{
+                width: 60%;
+            }
+            span{
+                font-size: $mega_big_fontSize;
+            }
+        }
+        .index_btn:hover{
+            background-color: $bgc-4dp;
+        }
+    }
+
+    //cash.php(硬貨、紙幣の選択画面)
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: $big_fontSize
+    }
+    .deposit{
+        margin: 10px auto;
+        width: $form_width;
+        display: flex;
+        justify-content: space-between;
+        .title{
+            display: block;
+            width: 200px;
+        }
+        select{
+            width: $select_width;
+            font-size: $big_fontSize;
+        }
+    }
+    #sum_deposit{
+        border-top: 1px solid #000;
+        margin: 10px auto;
+        padding-top: 30px;
+        width: $form_width;
+        display: flex;
+        justify-content: space-between;
+        .title{
+            display: block;
+            width: 200px;
+        }
+        p>input{
+            font-size: $big_fontSize;
+            text-align: right;
+            padding: 0 5px;
+        }
+    }
+    #confirm_btn{
+        width: 250px;
+        display: block;
+        margin: 20px auto 0;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 10px 40px;
+        appearance: none;
+        text-align: center;
+        font-size: $big_fontSize;
+        background-color: $key_color;
+        color: white;
+        border-radius: $border_radius;
+    }
+
+    //現金購入の確認画面
+    .btn_wrap{
+        width: $form_width;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        #confirm_btn:first-of-type{
+            background-color: white;
+            color: #000;
+            border: #000 solid 1px;
+        }
+    }
+}
+
+//現金購入の完了画面
+.comp_contents{
+    padding: 30px 100px;
+    width: 700px;
+    margin: 0 auto;
+    border-bottom: $bgc-4dp 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h2{
+        margin-bottom: 20px;
+    }
+    
+}
+.comp_contents:last-of-type{
+    border-bottom: none;
+}
+
+.toTop_btn{
+    width: 250px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+#btn_space{
+    padding-bottom: 50px;
+}
+
+//リセット画面
+#reset_h2{
+    text-align: center;
+    margin: 30px auto 20px;
+}
+
+//カードをかざす画面
+#attention{
+    margin: 20px auto;
+}
+#cardScan{
+    display: block;
+    text-align: center;
+    width: 40%;
+    height: 40%;
+    font-size: $mega_big_fontSize;
+    border-radius: $border_radius;
+    margin: 0 auto;
+    img{
+        width: 60%;
+    }
+}
+#cardScan:hover{
+    background-color: $bgc-4dp;
+}
+
+//カード購入の確認画面
+#balance{
+    margin: 30px auto;
+}
+#disabled{
+    background-color: $bgc-4dp;
+    color: white;
+    width: 250px;
+    display: block;
+    margin: 20px auto 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 40px;
+    appearance: none;
+    text-align: center;
+    font-size: $big_fontSize;
+    border-radius: $border_radius;
+}
+button[type="submit"]:disabled{
+    pointer-events: none;
+    background-color: white;
+}

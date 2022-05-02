@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-size: 22px;
+}
+
+img {
+  width: 100%;
+}
+
+select {
+  width: 50px;
+  font-size: 22px;
+}
+
+.err {
+  background-color: #dd00126e;
+}
+
+header {
+  height: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+#reset_btn {
+  text-decoration: none;
+  border: 1px solid #DD0011;
+  border-radius: 5px;
+  padding: 10px;
+  color: #DD0011;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#reset_btn:hover {
+  background-color: #dd00126e;
+  transition: 0.5s;
+}
+
+p {
+  text-align: center;
+}
+
+p span {
+  color: #DD0011;
+}
+
+p span strong {
+  font-size: 28px;
+}
+
+#index_p {
+  margin: 30px 0 20px;
+}
+
+.cash_p:first-of-type {
+  margin-top: 30px;
+}
+
+.cash_p:last-of-type {
+  margin-bottom: 20px;
+}
+
+form {
+  padding: 0 100px;
+}
+
+form #index_amount {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+form #btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+form #btn .index_btn {
+  width: 40%;
+  height: 40%;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+form #btn .index_btn img {
+  width: 60%;
+}
+
+form #btn .index_btn span {
+  font-size: 44px;
+}
+
+form #btn .index_btn:hover {
+  background-color: #bdbdbd;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+form .deposit {
+  margin: 10px auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form .deposit .title {
+  display: block;
+  width: 200px;
+}
+
+form .deposit select {
+  width: 50px;
+  font-size: 22px;
+}
+
+form #sum_deposit {
+  border-top: 1px solid #000;
+  margin: 10px auto;
+  padding-top: 30px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form #sum_deposit .title {
+  display: block;
+  width: 200px;
+}
+
+form #sum_deposit p > input {
+  font-size: 22px;
+  text-align: right;
+  padding: 0 5px;
+}
+
+form #confirm_btn {
+  width: 250px;
+  display: block;
+  margin: 20px auto 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 40px;
+  appearance: none;
+  text-align: center;
+  font-size: 22px;
+  background-color: #DD0011;
+  color: white;
+  border-radius: 5px;
+}
+
+form .btn_wrap {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form .btn_wrap #confirm_btn:first-of-type {
+  background-color: white;
+  color: #000;
+  border: #000 solid 1px;
+}
+
+.comp_contents {
+  padding: 30px 100px;
+  width: 700px;
+  margin: 0 auto;
+  border-bottom: #bdbdbd 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.comp_contents h2 {
+  margin-bottom: 20px;
+}
+
+.comp_contents:last-of-type {
+  border-bottom: none;
+}
+
+.toTop_btn {
+  width: 250px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+#btn_space {
+  padding-bottom: 50px;
+}
+
+#reset_h2 {
+  text-align: center;
+  margin: 30px auto 20px;
+}
+
+#attention {
+  margin: 20px auto;
+}
+
+#cardScan {
+  display: block;
+  text-align: center;
+  width: 40%;
+  height: 40%;
+  font-size: 44px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#cardScan img {
+  width: 60%;
+}
+
+#cardScan:hover {
+  background-color: #bdbdbd;
+}
+
+#balance {
+  margin: 30px auto;
+}
+
+#disabled {
+  background-color: #bdbdbd;
+  color: white;
+  width: 250px;
+  display: block;
+  margin: 20px auto 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 40px;
+  appearance: none;
+  text-align: center;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+button[type="submit"]:disabled {
+  pointer-events: none;
+  background-color: white;
+}
